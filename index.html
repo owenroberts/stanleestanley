@@ -1,0 +1,56 @@
+<!-- 
+make longer animation with dayna's video
+cat positions?
+playlist
+
+
+
+http://www.poemhunter.com/poem/black-cat/
+http://www.artmagick.com/poetry/poem.aspx?id=11314&name=cat
+
+-->
+
+<html><head>
+  <script charset="utf-8" src="jquery.js"></script>
+  <script charset="utf-8" src="skip.js"></script>
+  <script charset="utf-8" src="stan.js"></script>
+  <script charset="utf-8" src="lee.js"></script>
+  <link rel="stylesheet" type="text/css" href="butt.css">
+</head>
+<body>
+<!--
+  <section style="width:100px;background-color:red;height:10000px;position:absolute;margin-top:1700px;margin-left:20%;">
+    test</section>-->
+
+  <section id="splash" data-type="background" data-speed="10" >
+    <div class="acat">
+      <a href="#one"><img src="imgs/imgs/photo-1-.png" /></a>
+    </div>
+  </section>
+  <a name="one"></a>
+
+
+<!--
+  <section id="about" data-type="background" data-speed="2" data-offset="70%" style="background: url(imgs/bkgs/photo113.png) 0 0 no-repeat fixed; ">
+    <article>WORKS</article><section id="animate"><img src="imgs/imgs/jpeg-2.png" /></section>
+  </section> 
+  -->
+
+
+
+ 
+  <script type="text/javascript">
+  // scroll animation anchor from the splash
+  function scrollToAnchor(aid){
+    var aTag = $("a[name='"+ aid +"']");
+    $('html,body').animate({scrollTop: aTag.offset().top},1000);
+  }
+
+  $("#splash").click(function() {
+    scrollToAnchor('one');
+  });
+  </script>
+  
+
+
+</body></html>
