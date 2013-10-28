@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* CSS STYLES */
+
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  text-align:center;
+  font-family:sans-serif;
+  font-size:5em;
+  min-width:640px;
+}
+
+div.acat {
+  display:inline-block;
+}
+
+div.acat:hover {
+  cursor:pointer;
+  -webkit-filter: drop-shadow(0 0 120px rgb(255,0,255));
+}
+
+div.acat:active {
+  /*    display:none;*/
+}
+
+#two {
+  position:absolute;
+  left:0;
+  top:200px;
+}
+
+#two:hover div.acat {
+  display:block;
+}
+
+#home { 
+  height: 400px; 
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+}
+#about { 
+  min-height: 400px; 
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+/*
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+*/
+}
+
+#home article, 
+#about article { 
+  height: 458px; 
+  position: absolute; 
+  text-align: center; 
+  top: 150px; 
+  width: 100%; 
+}
+
+#splash {
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  height:100%;
+}
+
+#home img,
+#about img {
+  max-height:100%; 
+}
+
+#vids img {
+  margin-bottom:10px;
+}
+
+
+#animate img:hover {
+  cursor:crosshair;
+  -webkit-animation: super-rainbow 1000 infinite alternate linear; 
+  -moz-animation: super-rainbow 1000 infinite alternate linear; 
+  -webkit-filter: drop-shadow(0 0 25px rgb(255,0,255));
+}
+
+
+
+@-webkit-keyframes super-rainbow {
+  0%   { -webkit-filter: drop-shadow(0 0 25px red); } 
+  20%  { -webkit-filter: drop-shadow(0 0 25px blue); }
+  40%  { -webkit-filter: drop-shadow(0 0 25px orange); }
+  60%  { -webkit-filter: drop-shadow(0 0 25px yellow); }
+  80%  { -webkit-filter: drop-shadow(0 0 25px green ); }
+  100% { -webkit-filter: drop-shadow(0 0 25px blue ); }
+}
