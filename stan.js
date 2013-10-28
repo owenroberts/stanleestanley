@@ -1,3 +1,5 @@
+//this creates new sections with random order of all the images and populates each, applies styles
+
 Stanlee = {
   setup: function() {
 
@@ -344,6 +346,8 @@ Stanlee = {
 
 $( document ).ready( Stanlee.setup );
 
+
+//a function to randomly sort lists of images
 Array.prototype.shuffle = function (){
   var i = this.length, j, temp;
   if ( i == 0 ) return;
